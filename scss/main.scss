@@ -1,0 +1,174 @@
+// +++++++++++++++++++++++  TODO: IMPORT FONTS
+
+// VARIABLES
+
+// COLORS
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+// FONTS
+$font-body: "Open Sans", sans-serif;
+$font-special: "Raleway", sans-serif; // Headings, Call-to-actions, Header Navigation
+
+// GLOBAL STYLES
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  color: $very-dark-blue;
+  font-family: $font-body;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-special;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// ==================== HEADER
+
+.header {
+  padding: 6rem 0;
+
+  &-navbar {
+    max-width: 1300px;
+    margin: 0 auto 6rem auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-links {
+      a {
+        margin: 0 0 0 4rem;
+      }
+    }
+  }
+}
+
+// ==================== MAIN
+
+// HERO SECTION
+
+.hero {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  &-text {
+    flex-basis: 50%;
+
+    h1 {
+      margin-bottom: 1.8rem;
+      font-size: 3.8rem;
+    }
+
+    p {
+      width: 90%;
+      margin-bottom: 1.8rem;
+      font-size: 1.8rem;
+    }
+
+    &-form {
+      display: flex;
+      gap: 1.4rem;
+
+      [type="email"] {
+        flex-basis: 50%;
+        border: 1px solid $very-dark-blue;
+        border-radius: 2px;
+        padding: 1.2rem;
+      }
+
+      .btn {
+        padding: 1.2rem 5.6rem;
+        border: none;
+        border-radius: 2px;
+        background-color: $bright-blue;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-image {
+    flex-basis: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// PRODUCTIVE SECTION
+
+.productive {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+
+  &-text {
+    flex-basis: 55%;
+
+    h2 {
+      margin-bottom: 1.8rem;
+      font-size: 3.4rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      width: 80%;
+    }
+
+    a {
+      color: $moderate-cyan;
+    }
+  }
+
+  &-image {
+    flex-basis: 45%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// =====================  FOOTER
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
