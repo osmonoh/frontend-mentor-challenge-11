@@ -1,4 +1,5 @@
-// +++++++++++++++++++++++  TODO: IMPORT FONTS
+// IMPORTS
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 
 // VARIABLES
 
@@ -68,6 +69,7 @@ a {
     &-links {
       a {
         margin: 0 0 0 4rem;
+        font-family: $font-special;
       }
     }
   }
@@ -88,7 +90,7 @@ a {
 
     h1 {
       margin-bottom: 1.8rem;
-      font-size: 3.8rem;
+      font-size: 4rem;
     }
 
     p {
@@ -114,6 +116,7 @@ a {
         border-radius: 2px;
         background-color: $bright-blue;
         color: white;
+        font-family: $font-special;
         font-weight: 700;
         cursor: pointer;
       }
@@ -138,10 +141,12 @@ a {
 
   &-text {
     flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
 
     h2 {
       margin-bottom: 1.8rem;
-      font-size: 3.4rem;
+      font-size: 4rem;
     }
 
     p {
@@ -150,7 +155,52 @@ a {
     }
 
     a {
+      display: inline-block;
+      width: fit-content;
+      margin-bottom: 4rem;
+      border-bottom: 1px solid $moderate-cyan;
       color: $moderate-cyan;
+    }
+
+    &-card {
+      width: 36rem;
+      box-shadow: 0 0 16px 8px rgba(100, 100, 100, 0.1);
+      border-radius: 6px;
+      padding: 2rem 3rem;
+
+      p {
+        margin-bottom: 1.4rem;
+        width: 100%;
+        font-size: 1.4rem;
+        line-height: 1.8;
+      }
+
+      &-footer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        .thumbnail {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        h5 {
+          font-size: 1.4rem;
+        }
+
+        h6 {
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
+      }
     }
   }
 
@@ -161,6 +211,18 @@ a {
       width: 100%;
     }
   }
+}
+
+// ACCESS SECTION
+
+.wrap-access {
+  background-color: $desaturated-blue;
+  color: $light-grayish-blue;
+}
+
+.access {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 // =====================  FOOTER
