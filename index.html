@@ -13,7 +13,9 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="./style/css/main.min.css" />
+
+    <script src="https://use.fontawesome.com/3918c0bc6f.js"></script>
   </head>
   <body>
     <div class="page">
@@ -53,7 +55,8 @@
                 placeholder="Enter your email..."
                 required
               />
-              <input type="submit" value="Get Started" class="btn" />
+              <!-- <input type="submit" value="Get Started" class="btn" /> -->
+              <button type="submit" class="btn">Get Started</button>
             </form>
           </div>
           <div class="hero-image">
@@ -112,8 +115,15 @@
               </p>
             </div>
             <form action="#" class="access-form">
-              <input type="email" name="email2" id="email2" />
-              <input type="submit" value="Get Started For Free" />
+              <input
+                type="email"
+                name="email2"
+                id="email2"
+                placeholder="email@example.com"
+                required
+              />
+              <!-- <input type="submit" value="Get Started For Free" class="btn" />  -->
+              <button type="submit" class="btn">Get Started For Free</button>
             </form>
           </section>
         </div>
@@ -121,49 +131,61 @@
 
       <!-- ============================== FOOTER -->
 
-      <footer class="footer">
-        <div class="logo"><img src="/images/logo.svg" alt="logo" /></div>
-        <div class="footer-mid">
-          <div class="footer-mid-contact">
-            <div class="reach-out">
-              <div class="icon">
-                <img src="/images/icon-phone.svg" alt="icon" />
+      <div class="wrap-footer">
+        <footer class="footer">
+          <div class="logo-footer">
+            <img src="/images/logo-footer.svg" alt="logo" />
+          </div>
+          <div class="footer-mid">
+            <div class="footer-mid-contact">
+              <div class="reach-out">
+                <div class="icon">
+                  <img src="/images/icon-phone.svg" alt="icon" />
+                </div>
+                <p>+1-543-123-4567</p>
               </div>
-              <p>+1-543-123-4567</p>
-            </div>
-            <div class="reach-out">
-              <div class="icon">
-                <img src="/images/icon-email.svg" alt="icon" />
+              <div class="reach-out">
+                <div class="icon">
+                  <img src="/images/icon-email.svg" alt="icon" />
+                </div>
+                <p>example@fylo.com</p>
               </div>
-              <p>example@fylo.com</p>
+            </div>
+            <div class="footer-mid-links">
+              <div class="left">
+                <a href="#">About Us</a>
+                <a href="#">Jobs</a>
+                <a href="#">Press</a>
+                <a href="#">Blog</a>
+              </div>
+              <div class="right">
+                <a href="#">Contact Us</a>
+                <a href="#">Teams</a>
+                <a href="#">Privacy</a>
+              </div>
+            </div>
+            <div class="footer-mid-social">
+              <a class="link-social" href="#">
+                <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+              </a>
+              <a class="link-social" href="#">
+                <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              </a>
+              <a class="link-social" href="#">
+                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
-          <div class="footer-mid-links">
-            <div class="left">
-              <a href="#">About Us</a>
-              <a href="#">Jobs</a>
-              <a href="#">Press</a>
-              <a href="#">Blog</a>
-            </div>
-            <div class="right">
-              <a href="#">Contact Us</a>
-              <a href="#">Teams</a>
-              <a href="#">Privacy</a>
-            </div>
-          </div>
-          <div class="footer-mid-social">
-            <a href="#"><i>i</i></a>
-            <a href="#"><i>i</i></a>
-            <a href="#"><i>i</i></a>
-          </div>
-        </div>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
-        </p>
-      </footer>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">DCH</a>.
+          </p>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
